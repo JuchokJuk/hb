@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "ComicSansMS";
+    src: url("/fonts/ComicSansMS.ttf");
+}
+
+* {
+    font-family: "ComicSansMS";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: hsl(120, 64%, 92%);
+    user-select: none;
+
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+
+    animation: filter-animation 4s infinite;
+}
+
+@keyframes filter-animation {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    
+    50% {
+      filter: hue-rotate(360deg);
+    }
+    
+    100% {
+      filter: hue-rotate(0deg);
+    }
+  }
