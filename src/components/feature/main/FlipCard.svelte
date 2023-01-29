@@ -13,6 +13,7 @@
 
   onMount(()=>{
     audio = new Audio('/music/sax.mp3');
+    audio.loop = true;
   })
 
   $:{
