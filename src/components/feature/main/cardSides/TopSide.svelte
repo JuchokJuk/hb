@@ -19,7 +19,7 @@
 
     padding: 32px;
 
-    background: hsl(120, 62%, 83%);
+    background: white;
     border-radius: 8px;
     cursor: pointer;
   }

@@ -1,4 +1,5 @@
 <script>
+    import { onMount } from "svelte";
   import DancingCats from "./confetti/DancingCats.svelte";
   import Emojis from "./confetti/Emojis.svelte";
 
@@ -6,6 +7,22 @@
 
   function flip() {
     flipped = !flipped;
+  }
+
+  let audio;
+
+  onMount(()=>{
+    audio = new Audio('/music/sax.mp3');
+  })
+
+  $:{
+    if(flipped){
+      audio.play();
+    }else{
+      if(audio){
+        audio.pause();
+      }
+    }
   }
 </script>
 
