@@ -4,10 +4,10 @@
 
 <div class="card">
   <!-- svelte-ignore a11y-missing-attribute -->
-  <img src="/images/lesha.png">
+  <img src="/images/polya.jpg">
   <div class="header">
     <Header>С днём рождения,</Header>
-    <Header>Лёша!!11!!!!1</Header>
+    <Header>Поляя!!11!!!!1</Header>
   </div>
 </div>
 
